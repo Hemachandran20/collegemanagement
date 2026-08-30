@@ -1,0 +1,43 @@
+# Node modules & dependencies
+node_modules/
+server/node_modules/
+client/node_modules/
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+server/.env
+server/.env.*
+!server/.env.example
+client/.env
+client/.env.*
+!client/.env.example
+
+# Production builds
+dist/
+client/dist/
+build/
+
+# Local logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# File uploads (ignore uploaded complaint files but keep folder structure)
+server/uploads/*
+!server/uploads/.gitkeep
+
+# Local data cache
+server/data/
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
